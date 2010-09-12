@@ -12,19 +12,19 @@
 	<table>
 		<tr>
 			<td>Nombre</td>
-			<td><input name="nombre" type="text" value="Julian" /></td>
+			<td><input name="nombre" type="text" /></td>
 		</tr>
 		<tr>
 			<td>Correo</td>
-			<td><input name="correo" type="text" value="email@gmail.com" /></td>
+			<td><input name="correo" type="text" /></td>
 		</tr>
 		<tr>
 			<td>Pa&iacute;s</td>
-			<td><input name="pais" type="text" value="Mexico" /></td>
+			<td><input id="pais" name="pais" type="text" /></td>
 		</tr>
-		<tr id="state">
+		<tr id="file_estado">
 			<td>Estado</td>
-			<td><input name="estado" type="text" value="Yucatan" /></td>
+			<td><input name="estado" type="text" /></td>
 		</tr>
 		<tr>
 			<td>Comentario</td>

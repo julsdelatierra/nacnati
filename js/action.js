@@ -5,10 +5,13 @@ $(document).ready(function(){
 	    myLocation = new google.maps.LatLng(pos.coords.latitude,pos.coords.longitude);
             geocoder = new google.maps.Geocoder();
 	    geocoder.geocode({'location':myLocation}, function(result,status){
-		country = result[0].address_components[4].short_name;
-                console.log(country);
-		if(country != 'MX'){
-                    $('#state').hide('fast');
+		country = result[0].address_components[4];
+                console.log(country.short_name);
+		if(country.short_name != 'MX'){
+                    $('#fila_estado').hide('fast');
+                }
+                else{
+                    $('#pais').val(country.long_name);
                 }
             });
         });
