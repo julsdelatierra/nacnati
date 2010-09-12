@@ -18,4 +18,22 @@ $(document).ready(function(){
             });
         });
     }
+    $('#send').click(function(){
+        $.ajax({
+            type:'POST',
+            url:'./guardarOpinion.php',
+            data:{
+                'nombre':$('#nombre').val(),
+                'correo':$('#correo').val(),
+                'pais':$('#pais').val(),
+                'estado':$('#estado').val(),
+                'comentario':$('#comentario').val(),
+                'recaptcha_challenge_field':$("input#recaptcha_challenge_field").val(),
+                'recaptcha_response_field':$("input#recaptcha_response_field").val()
+            },
+            success:function(data){
+                console.log(data);
+            }
+        });
+    });
 });

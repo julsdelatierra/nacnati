@@ -15,15 +15,14 @@
 <body>
 	<!-- Esto debe ir en un div -->
 	<h1><script>document.write(comment_input_message);</script></h1>
-	<form action="guardarOpinion.php" method="post">
 	<table>
 		<tr>
 			<td><script>document.write(name);</script></td>
-			<td><input name="nombre" type="text" /></td>
+			<td><input id="nombre" name="nombre" type="text" /></td>
 		</tr>
 		<tr>
 			<td><script>document.write(email);</script></td>
-			<td><input name="correo" type="text" /></td>
+			<td><input id="correo" name="correo" type="text" /></td>
 		</tr>
 		<tr>
 			<td><script>document.write(country);</script></td>
@@ -35,7 +34,7 @@
 		</tr>
 		<tr>
 			<td><script>document.write(comment);</script></td>
-			<td><textarea name="comentario" cols="30" rows="10">Comentario vacio</textarea></td>
+			<td><textarea id="comentario" name="comentario" cols="30" rows="10"></textarea></td>
 		</tr>
 		<tr>
 			<td>Captcha</td>
@@ -48,8 +47,7 @@
 			</td>
 		</tr>
 	</table>
-	<input id="send" type="submit" />
-	</form>
+	<input id="send" type="submit" value="Enviar" />
 	<!-- fin -->
 </body>
 </html>
