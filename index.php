@@ -3,10 +3,9 @@
 <head>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<title>Untitled</title>
-	<!--
+	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="application/x-javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-	<script type="application/x-javascript" src="js/geolocation.js"></script>
-	-->
+	<script type="text/javascript" src="./js/action.js"></script>
 </head>
 <body>
 	<form action="guardarOpinion.php" method="post">
@@ -23,7 +22,7 @@
 			<td>Pa&iacute;s</td>
 			<td><input name="pais" type="text" value="Mexico" /></td>
 		</tr>
-		<tr>
+		<tr id="state">
 			<td>Estado</td>
 			<td><input name="estado" type="text" value="Yucatan" /></td>
 		</tr>
