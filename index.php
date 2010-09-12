@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Tiene que ir -->
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<!-- fin -->
 	<title>Untitled</title>
+	<!-- Tiene que ir -->
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="application/x-javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script type="text/javascript" src="./js/action.js"></script>
+	<script type="text/javascript" src="./l12n/es.js"></script>
+	<!-- fin -->
 </head>
 <body>
+	<!-- Esto debe ir en un div -->
+	<h1><script>document.write(comment_input_message);</script></h1>
 	<form action="guardarOpinion.php" method="post">
 	<table>
 		<tr>
-			<td>Nombre</td>
+			<td><script>document.write(name);</script></td>
 			<td><input name="nombre" type="text" /></td>
 		</tr>
 		<tr>
-			<td>Correo</td>
+			<td><script>document.write(email);</script></td>
 			<td><input name="correo" type="text" /></td>
 		</tr>
 		<tr>
-			<td>Pa&iacute;s</td>
+			<td><script>document.write(country);</script></td>
 			<td><input id="pais" name="pais" type="text" /></td>
 		</tr>
 		<tr id="file_estado">
-			<td>Estado</td>
-			<td><input name="estado" type="text" /></td>
+			<td><script>document.write(state);</script></td>
+			<td><input id="estado" name="estado" type="text" /></td>
 		</tr>
 		<tr>
-			<td>Comentario</td>
+			<td><script>document.write(comment);</script></td>
 			<td><textarea name="comentario" cols="30" rows="10">Comentario vacio</textarea></td>
 		</tr>
 		<tr>
@@ -41,7 +48,8 @@
 			</td>
 		</tr>
 	</table>
-	<input id="send" type="submit" value="Enviar" />
+	<input id="send" type="submit" />
 	</form>
+	<!-- fin -->
 </body>
 </html>
