@@ -15,6 +15,8 @@
 <body>
 	<!-- Esto debe ir en un div -->
 	<h1><script>document.write(comment_input_message);</script></h1>
+	<div id="notice" style="display:none;">Gracias por tu comentario.</div>
+	<div id="error" style="display:none;">Revisa los datos que has ingresado.</div>
 	<table>
 		<tr>
 			<td><script>document.write(name);</script></td>

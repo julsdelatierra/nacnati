@@ -22,12 +22,12 @@
             mysql_select_db($database);
             $query = "insert into opiniones(nombre,correo,pais,estado,comentario)
                         values('$nombre','$correo','$pais','$estado','$comentario');";
-            echo $query;
             $query = mysql_query($query,$conexion);
             mysql_close($conexion);
+            echo 'OK';
         }
         else{
-            die('El captcha fue introducido incorrectamente');
+            die('ERROR');
         }
     }
 ?>
